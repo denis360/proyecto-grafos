@@ -1,0 +1,823 @@
+{
+  "Linea 1": {
+    "estaciones": [
+      "San Sebastián",
+      "Mercado Central",
+      "Correos",
+      "Paseo de las Letras",
+      "Centro Civico",
+      "Sur 2",
+      "Gómez Carrillo",
+      "San Agustin",
+      "Parque Centenario"
+    ],
+    "relaciones": {
+      "San Sebastián": [
+        [
+          "Mercado Central",
+          250
+        ]
+      ],
+      "Mercado Central": [
+        [
+          "Correos",
+          340
+        ]
+      ],
+      "Correos": [
+        [
+          "Paseo de las Letras",
+          460
+        ]
+      ],
+      "Paseo de las Letras": [
+        [
+          "Centro Civico",
+          230
+        ]
+      ],
+      "Centro Civico": [
+        [
+          "Sur 2",
+          839
+        ]
+      ],
+      "Sur 2": [
+        [
+          "Gómez Carrillo",
+          450
+        ]
+      ],
+      "Gómez Carrillo": [
+        [
+          "San Agustin",
+          868
+        ]
+      ],
+      "San Agustin": [
+        [
+          "Parque Centenario",
+          423
+        ]
+      ],
+      "Parque Centenario": [
+        [
+          "San Sebastián",
+          234
+        ]
+      ]
+    }
+  },
+  "Linea 2": {
+    "estaciones": [
+      "San Sebastián",
+      "Asunción",
+      "Hipódromo del Norte",
+      "Simeón Cañas",
+      "Jocotenango"
+    ],
+    "relaciones": {
+      "San Sebastián": [
+        [
+          "Asunción",
+          345
+        ]
+      ],
+      "Asunción": [
+        [
+          "Hipódromo del Norte",
+          256
+        ]
+      ],
+      "Hipódromo del Norte": [
+        [
+          "Simeón Cañas",
+          583
+        ]
+      ],
+      "Simeón Cañas": [
+        [
+          "Jocotenango",
+          322
+        ]
+      ],
+      "Jocotenango": [
+        [
+          "San Sebastián",
+          283
+        ]
+      ]
+    }
+  },
+  "Linea 6": {
+    "estaciones": [
+      "Proyectos",
+      "Ave. La pedrera",
+      "Cipresales",
+      "Quintanal",
+      "Corpus Christi",
+      "José Martín",
+      "Cerro del carmen",
+      "Santa Teresa",
+      "Capuchinas",
+      "Beatas de Belén",
+      "Fegua",
+      "Santa Clara",
+      "Colón",
+      "La merced",
+      "Parroquia",
+      "Igss zona 6",
+      "Centro zona 6",
+      "Academia"
+    ],
+    "relaciones": {
+      "Proyectos": [
+        [
+          "Ave. La pedrera",
+          239
+        ]
+      ],
+      "Ave. La pedrera": [
+        [
+          "Cipresales",
+          189
+        ],
+        [
+          "Proyectos",
+          239
+        ]
+      ],
+      "Cipresales": [
+        [
+          "Quintanal",
+          234
+        ],
+        [
+          "Ave. La pedrera",
+          189
+        ]
+      ],
+      "Quintanal": [
+        [
+          "Corpus Christi",
+          234
+        ]
+      ],
+      "Corpus Christi": [
+        [
+          "José Martín",
+          350
+        ]
+      ],
+      "José Martín": [
+        [
+          "Cerro del carmen",
+          808
+        ]
+      ],
+      "Cerro del carmen": [
+        [
+          "Santa Teresa",
+          450
+        ]
+      ],
+      "Santa Teresa": [
+        [
+          "Capuchinas",
+          350
+        ]
+      ],
+      "Capuchinas": [
+        [
+          "Beatas de Belén",
+          500
+        ]
+      ],
+      "Beatas de Belén": [
+        [
+          "Fegua",
+          400
+        ]
+      ],
+      "Fegua": [
+        [
+          "Santa Clara",
+          450
+        ]
+      ],
+      "Santa Clara": [
+        [
+          "Colón",
+          560
+        ]
+      ],
+      "Colón": [
+        [
+          "La merced",
+          450
+        ]
+      ],
+      "La merced": [
+        [
+          "Parroquia",
+          434
+        ]
+      ],
+      "Parroquia": [
+        [
+          "Igss zona 6",
+          385
+        ]
+      ],
+      "Igss zona 6": [
+        [
+          "Centro zona 6",
+          560
+        ]
+      ],
+      "Centro zona 6": [
+        [
+          "Academia",
+          345
+        ]
+      ],
+      "Academia": [
+        [
+          "Cipresales",
+          234
+        ]
+      ]
+    }
+  },
+  "Linea 7": {
+    "estaciones": [
+      "Usac Periférico",
+      "Aguilar Batres",
+      "Granai",
+      "Rodolfo Robles",
+      "Cejusa",
+      "San jorge",
+      "Roosevelt",
+      "San Juan",
+      "Ciudad de Plata II",
+      "Villa Linda",
+      "4 de Febrero",
+      "Bethania",
+      "Incienso",
+      "San Juan de Dios",
+      "Pasaje Aycinena",
+      "La merced",
+      "Cruz Roja",
+      "Archivo General",
+      "Santuario Guadalupe"
+    ],
+    "relaciones": {
+      "Usac Periférico": [
+        [
+          "Aguilar Batres",
+          305
+        ]
+      ],
+      "Aguilar Batres": [
+        [
+          "Usac Periférico",
+          305
+        ],
+        [
+          "Granai",
+          489
+        ]
+      ],
+      "Granai": [
+        [
+          "Aguilar Batres",
+          489
+        ],
+        [
+          "Rodolfo Robles",
+          345
+        ]
+      ],
+      "Rodolfo Robles": [
+        [
+          "Granai",
+          345
+        ],
+        [
+          "Cejusa",
+          560
+        ]
+      ],
+      "Cejusa": [
+        [
+          "Rodolfo Robles",
+          560
+        ],
+        [
+          "San jorge",
+          378
+        ]
+      ],
+      "San jorge": [
+        [
+          "Cejusa",
+          378
+        ],
+        [
+          "Roosevelt",
+          560
+        ]
+      ],
+      "Roosevelt": [
+        [
+          "San jorge",
+          560
+        ],
+        [
+          "San Juan",
+          347
+        ]
+      ],
+      "San Juan": [
+        [
+          "Roosevelt",
+          347
+        ],
+        [
+          "Ciudad de Plata II",
+          689
+        ]
+      ],
+      "Ciudad de Plata II": [
+        [
+          "San juan",
+          689
+        ],
+        [
+          "Villa Linda",
+          310
+        ]
+      ],
+      "Villa Linda": [
+        [
+          "Ciudad de Plata II",
+          310
+        ],
+        [
+          "4 de Febrero",
+          456
+        ]
+      ],
+      "4 de Febrero": [
+        [
+          "Villa Linda",
+          456
+        ],
+        [
+          "Bethania",
+          658
+        ]
+      ],
+      "Bethania": [
+        [
+          "4 de Febrero",
+          658
+        ],
+        [
+          "Incienso",
+          547
+        ]
+      ],
+      "Incienso": [
+        [
+          "San Juan de Dios",
+          459
+        ]
+      ],
+      "San Juan de Dios": [
+        [
+          "Pasaje Aycinena",
+          689
+        ]
+      ],
+      "Pasaje Aycinena": [
+        [
+          "La merced",
+          435
+        ]
+      ],
+      "La merced": [
+        [
+          "Cruz Roja",
+          686
+        ]
+      ],
+      "Cruz Roja": [
+        [
+          "Archivo General",
+          489
+        ]
+      ],
+      "Archivo General": [
+        [
+          "Santuario Guadalupe",
+          658
+        ]
+      ],
+      "Santuario Guadalupe": [
+        [
+          "Incienso",
+          456
+        ]
+      ]
+    }
+  },
+  "Linea 12": {
+    "estaciones": [
+      "Centra Sur",
+      "Monte Maria",
+      "Javier",
+      "Las Charcas",
+      "Aguilar Batres",
+      "El carmen",
+      "Reformita",
+      "Mariscal",
+      "Trébol",
+      "Santa Cecilia",
+      "Bolivar",
+      "Don Bosco",
+      "El calvario",
+      "Plaza Municipal",
+      "Plaza Barrios",
+      "Plaza El Amate"
+    ],
+    "relaciones": {
+      "Centra Sur": [
+        [
+          "Monte Maria",
+          345
+        ]
+      ],
+      "Monte Maria": [
+        [
+          "Centra Sur",
+          345
+        ],
+        [
+          "Javier",
+          450
+        ]
+      ],
+      "Javier": [
+        [
+          "Monte Maria",
+          450
+        ],
+        [
+          "Las Charcas",
+          656
+        ]
+      ],
+      "Las Charcas": [
+        [
+          "Javier",
+          656
+        ],
+        [
+          "Aguilar Batres",
+          687
+        ]
+      ],
+      "Aguilar Batres": [
+        [
+          "Las Charcas",
+          687
+        ],
+        [
+          "El carmen",
+          789
+        ]
+      ],
+      "El carmen": [
+        [
+          "Aguilar Batres",
+          789
+        ],
+        [
+          "Reformita",
+          689
+        ]
+      ],
+      "Reformita": [
+        [
+          "El carmen",
+          689
+        ],
+        [
+          "Mariscal",
+          621
+        ]
+      ],
+      "Mariscal": [
+        [
+          "Reformita",
+          621
+        ],
+        [
+          "Trébol",
+          876
+        ]
+      ],
+      "Trébol": [
+        [
+          "Mariscal",
+          876
+        ],
+        [
+          "Santa Cecilia",
+          658
+        ]
+      ],
+      "Santa Cecilia": [
+        [
+          "Trébol",
+          658
+        ],
+        [
+          "Bolivar",
+          591
+        ]
+      ],
+      "Bolivar": [
+        [
+          "Santa Cecilia",
+          591
+        ],
+        [
+          "Don Bosco",
+          582
+        ]
+      ],
+      "Don Bosco": [
+        [
+          "Bolivar",
+          582
+        ],
+        [
+          "El calvario",
+          518
+        ]
+      ],
+      "El calvario": [
+        [
+          "Plaza Municipal",
+          591
+        ]
+      ],
+      "Plaza Municipal": [
+        [
+          "Plaza Barrios",
+          821
+        ]
+      ],
+      "Plaza Barrios": [
+        [
+          "Plaza El Amate",
+          819
+        ]
+      ],
+      "Plaza El Amate": [
+        [
+          "Don Bosco",
+          758
+        ]
+      ]
+    }
+  },
+  "Linea 18": {
+    "estaciones": [
+      "Atlántida",
+      "Victorias",
+      "San Martín",
+      "Capuchinas",
+      "Beatas de Belén",
+      "Fegua",
+      "Santa Clara",
+      "Colón",
+      "La merced",
+      "Cerro del carmen"
+    ],
+    "relaciones": {
+      "Atlántida": [
+        [
+          "Victorias",
+          890
+        ]
+      ],
+      "Victorias": [
+        [
+          "Atlántida",
+          890
+        ],
+        [
+          "San Martín",
+          410
+        ]
+      ],
+      "San Martín": [
+        [
+          "Capuchinas",
+          1230
+        ]
+      ],
+      "Capuchinas": [
+        [
+          "Beatas de Belén",
+          289
+        ]
+      ],
+      "Beatas de Belén": [
+        [
+          "Fegua",
+          260
+        ]
+      ],
+      "Fegua": [
+        [
+          "Santa Clara",
+          356
+        ]
+      ],
+      "Santa Clara": [
+        [
+          "Colón",
+          345
+        ]
+      ],
+      "Colón": [
+        [
+          "La merced",
+          560
+        ]
+      ],
+      "La merced": [
+        [
+          "Cerro del carmen",
+          600
+        ]
+      ],
+      "Cerro del carmen": [
+        [
+          "San Martín",
+          890
+        ]
+      ]
+    }
+  },
+  "Linea 13": {
+    "estaciones": [
+      "Hangares",
+      "Plaza Argentina",
+      "Los Arcos",
+      "Plaza España",
+      "Igss Zona 9",
+      "Seis 26",
+      "Torre del Reformador",
+      "Plaza de la República",
+      "Banco de Guatemala",
+      "Plaza Barrios",
+      "Tipografía",
+      "El Calvario",
+      "4 Grados Sur",
+      "Exposición",
+      "Terminal",
+      "Industria",
+      "Tívoli",
+      "Montúfar",
+      "Acueducto",
+      "Fuerza Aérea"
+    ],
+    "relaciones": {
+      "Hangares": [
+        [
+          "Plaza Argentina",
+          290
+        ]
+      ],
+      "Plaza Argentina": [
+        [
+          "Los Arcos",
+          584
+        ]
+      ],
+      "Los Arcos": [
+        [
+          "Plaza España",
+          482
+        ]
+      ],
+      "Plaza España": [
+        [
+          "Igss Zona 9",
+          293
+        ]
+      ],
+      "Igss Zona 9": [
+        [
+          "Seis 26",
+          302
+        ]
+      ],
+      "Seis 26": [
+        [
+          "Torre del Reformador",
+          382
+        ]
+      ],
+      "Torre del Reformador": [
+        [
+          "Plaza de la República",
+          583
+        ]
+      ],
+      "Plaza de la República": [
+        [
+          "Banco de Guatemala",
+          284
+        ]
+      ],
+      "Banco de Guatemala": [
+        [
+          "Plaza Barrios",
+          382
+        ]
+      ],
+      "Plaza Barrios": [
+        [
+          "Tipografía",
+          247
+        ]
+      ],
+      "Tipografía": [
+        [
+          "El Calvario",
+          389
+        ]
+      ],
+      "El Calvario": [
+        [
+          "4 Grados Sur",
+          643
+        ]
+      ],
+      "4 Grados Sur": [
+        [
+          "Exposición",
+          281
+        ]
+      ],
+      "Exposición": [
+        [
+          "Terminal",
+          482
+        ]
+      ],
+      "Terminal": [
+        [
+          "Industria",
+          280
+        ]
+      ],
+      "Industria": [
+        [
+          "Tívoli",
+          483
+        ]
+      ],
+      "Tívoli": [
+        [
+          "Montúfar",
+          471
+        ]
+      ],
+      "Montúfar": [
+        [
+          "Montúfar",
+          384
+        ]
+      ],
+      "Acueducto": [
+        [
+          "Acueducto",
+          583
+        ]
+      ],
+      "Fuerza Aérea": [
+        [
+          "Hangares",
+          218
+        ]
+      ]
+    }
+  }
+}
