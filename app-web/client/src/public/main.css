@@ -1,0 +1,32 @@
+body {
+  background: #212529;
+  overflow-x: hidden;
+}
+
+#no-style {
+  border: none;
+}
+
+nav {
+  z-index: 5;
+}
+
+#view-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFDEE9;
+  background-image: linear-gradient(30deg, #FFDEE9 30%, #B5FFFC 100%);
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}

@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <div class="card bg-dark text-light rounded-0">
+    <div class="card bg-dark text-light rounded-0" id="no-style">
       <div class="card-body">
         <div class="row">
           <div class="col-md-3">
@@ -15,69 +15,39 @@
           </div>
           <div class="col-md-9">
             <div class="card bg-dark mb-3 text-light rounded-0">
-              <div class="card-header">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card bg-dark text-light rounded-0">
-                      <div class="card-header text-center">
-                        <h3>Lugar de inicio</h3>
-                      </div>
-                      <div class="card-body">
-                        <input type="text" class="form-control bg-dark text-light rounded-0" id="start"
-                          placeholder="Inicio" autofocus="" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card bg-dark text-light rounded-0">
-                      <div class="card-header text-center">
-                        <h3>Lugar de destino</h3>
-                      </div>
-                      <div class="card-body">
-                        <input type="text" class="form-control bg-dark text-light rounded-0" id="fin"
-                          placeholder="Destino" required>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="d-grid gap-2 flex">
+                    <div class="mb-3">
+                      <input type="text" class="form-control bg-dark text-light rounded-0" id="start"
+                        placeholder="Lugar de inicio" autofocus="">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control bg-dark text-light rounded-0" id="fin"
+                        placeholder="Lugar de destino">
+                    </div>
+                    <div class="d-grid gap-2 mb-3">
                       <button class="btn btn-primary rounded-0" data-toggle="tooltip" data-placement="top"
                         title="Iniciar indicaciones hacia el lugar de destino." id="submit">Ver ruta</button>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="d-grid gap-2 flex">
                       <button class="btn btn-danger rounded-0" data-toggle="tooltip" data-placement="top"
                         title="Eliminar ruta anterior e iniciar una nueva." id="clear">Iniciar nueva ruta</button>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="card bg-dark mb-3 text-light rounded-0">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="card bg-dark text-light rounded -0">
-                        <div class="card-header text-center">
-                          Indicaciones
-                        </div>
-                        <div class="card-body">
-                          <table class="table table-hover table-dark mb-0">
-                            <tbody id="table-stations"></tbody>
-                          </table>
-                        </div>
+                  <div class="col-md-6">
+                    <div class="card mb-3 bg-dark text-light rounded-0">
+                      <div class="card-header text-center">
+                        Datos
                       </div>
+                      <div class="card-body" id="body-datas"></div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="card bg-dark text-light rounded-0">
-                        <div class="card-header text-center">
-                          Datos
-                        </div>
-                        <div class="card-body" id="body-datas"></div>
+                    <div class="card bg-dark text-light rounded -0">
+                      <div class="card-header text-center">
+                        Indicaciones
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-hover table-dark mb-0">
+                          <tbody id="table-stations"></tbody>
+                        </table>
                       </div>
                     </div>
                   </div>

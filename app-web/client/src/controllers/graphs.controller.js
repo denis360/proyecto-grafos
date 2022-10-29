@@ -13,6 +13,7 @@ class DemoForceDirectedLayout extends go.ForceDirectedLayout {
   }
 }
 
+// sacar colores al azar
 function random (colors) {
   const index = Math.floor(
     Math.random() * colors.length
@@ -21,8 +22,11 @@ function random (colors) {
   return colors[index];
 }
 
+// mostrar todo el grafo
 function all(content, divA) {
   const html = divA.querySelector("#graph");
+  divA.querySelector("#title").innerText = `Todas las lineas`;
+  divA.querySelector("#card-values").classList.add("d-none");
   html.innerHTML = '';
   html.innerHTML = `
     <div id="all"
@@ -50,7 +54,6 @@ function all(content, divA) {
   for (const line of Object.keys(content)) {
     for (const estacion of content[line]["estaciones"]) {
       if (!nodes.includes(estacion)) {
-        // nodes.push({key: estacion, text: estacion, color: random(colors)});
         nodes.push(estacion);
       }
     }
@@ -63,6 +66,7 @@ function all(content, divA) {
     })
   }
   
+  // por cada nodo que tengo en `nodes` le agrego una llave, el texto y un color
   nodes = nodes.map((e) => ({key: e, text: e, color: random(colors)}))
 
   myDiagram.nodeTemplate = $(go.Node, "Auto", 
@@ -88,8 +92,7 @@ export default async () => {
 
   function onLine (line) {
     const html = divA.querySelector("#graph");
-    const title = divA.querySelector("#title");
-    title.innerText = `Grafo ${line}`;
+    divA.querySelector("#title").innerText = `Grafo: ${line}`;
     html.innerHTML = '';
     html.innerHTML = `
       <div id="${line}"
@@ -130,16 +133,19 @@ export default async () => {
         margin: 5, font: "18px sans-serif"
       }, new go.Binding("text")));
     
+    // graficamos el grafo pasandole los nodos y las relaciones entre los nodos
     myDiagram.model = new go.GraphLinksModel(nodes, relations);
     
     divA.querySelector("#card-values").classList.remove("d-none");
     const table = divA.querySelector("#table-values");
     table.innerHTML = '';
     
+    // creamos la tabla de referencias
     nodes.forEach((node) => {
-      const row = table.insertRow();
+      const row = table.insertRow(); // creamos una fila
       const {key, text} = node;
       
+      // a cada fila le agregamos su informacion
       row.innerHTML = `
         <td>${text}</td>
         <td>${key}</td>
@@ -150,10 +156,11 @@ export default async () => {
   
   const row = body.insertRow();
   row.innerHTML = `
-    <td>Todo</td>
+    <td>Todas las lineas</td>
   `
   row.onclick = () => all(content.content, divA);
 
+  // creamos una fila y le agregamos el evento click y ejecuta la funcion `onLine` pasandole el nombre de la linea
   Object.getOwnPropertyNames(content.content).forEach((line) => {
     const row = body.insertRow();
     row.innerHTML = `
